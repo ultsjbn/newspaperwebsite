@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="articleTheme" href="css-files/dark modern.css" rel="stylesheet" type="text/css">
+        <title>The EchoSphere - Super Typhoon Kong-rey edges towards Taiwan, could sweep ‘almost the whole’ island</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="page">
+            <!--Header-->
+            <header>
+                <a href="../index.html">
+                    <img id="headerimg" src="images/dark modern header.png">
+                </a>
+                <div id="date" class="date">November 10, 2024</div>
+            </header> <!--header-->
+
+            <!--Main Content-->
+            <main>
+                <article>
+                    <h1>Super Typhoon Kong-rey edges towards Taiwan, could sweep ‘almost the whole’ island</h1>
+                    <h3>by Kathleen Magramo and Eric Cheung. October 30, 2024</h3>
+                    <div id="top-image">
+                        <img id="articleImg" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2181050005.jpg">
+                    </div>
+                    <p>(CNN)—Authorities in Taiwan are warning residents along its eastern coast to brace for the impacts Super Typhoon Kong-rey, which has rapidly intensified as it barrels towards the island after bashing the Philippines.</p> 
+
+                    <p>Kong-rey, moving northwest over the Philippine Sea, reached super-typhoon strength on Wednesday, according to the Joint Typhoon Warning Center (JTWC). With winds of 240 kilometers per hour (150 miles per hour), it is the equivalent of a Category 4 Atlantic hurricane.</p>   
+
+                    <p>The powerful typhoon is forecast to make landfall early Thursday (Wednesday evening ET) in Taitung, a sparsely populated county on Taiwan’s mountainous southeastern coast.</p>
+                        
+                    <p>“As the typhoon continues to move towards the northwest, almost the whole of Taiwan will be covered by the storm circle later tonight,” meteorologist Chu Mei-lin, with the island’s weather agency, said in a press conference on Wednesday morning.</p> 
+                        
+                    <p>The Central Weather Administration (CWA) issued a sea warning Tuesday as the storm drew closer. As of noon on Wednesday, the agency had issued land warnings for more than half of the island’s counties, which were expected to be hit by the storm’s outer bands.</p>  
+                        
+                    <p>Forecasts show the powerful storm could weaken slightly ahead of making direct landfall on its southeastern coast, but it is still expected to unleash intense downpours, bringing flash flooding, storm surges and the risk of landslides.</p>
+                        
+                    <p>“We urge everyone to make preparations accordingly,” Chu warned.</p>
+                        
+                    <p>Chu added that waves could reach up to eight meters high when the typhoon makes landfall. There will also be heavy rainfall across Taiwan on Thursday, including in Taipei.</p> 
+                        
+                    <p>Taiwan’s military has placed about 36,000 soldiers on standby to assist with rescue and relief work, according to its Ministry of National Defense.</p> 
+                        
+                    <p>Taiwan generally has a strong track record of responding to major typhoons, though remote villages in more mountainous regions can be particularly vulnerable to landslides. Earlier this month, Typhoon Krathon killed four people as it brought particularly heavy rains to the south of the island.</p> 
+                        
+                    <p>Two outlying islands of Taiwan, Green Island and Orchid Island, suspended work and classes on Wednesday, according the county government.</p> 
+                        
+                    <p>In recent days, northern parts of the Philippines’ main island of Luzon have been lashed by the outer bands of Kong-rey, known locally as Leon, as authorities ordered evacuations and warned of its impacts after already seeing devastation last week from Tropical Storm Trami, known as Kristine, which killed at least 130 people.</p>   
+                        
+                    <p>As of Wednesday morning, Kong-rey continued to skirt the island’s north as it moved towards Taiwan.</p> 
+                </article>
+                
+                <a href="https://edition.cnn.com/2024/10/29/world/taiwan-typhoon-kong-rey-intl-hnk/index.html" target="_blank">Source.</a>
+            </main> <!--main content-->
+
+            <!--Control Panel-->
+            <div class="controlPanel">
+                <button class="arrangement" onclick="openMenu('arrangementMenu')">Arrangement</button>
+                <button class="order" onclick="openMenu('orderMenu')">Order</button>
+                <button class="themes" onclick="openMenu('themesMenu')">Themes</button>
+            </div> <!--controlPanel-->
+        
+            <!-- Arrangement Menu -->
+            <div id="arrangementMenu" class="popupMenu">
+                <button class="closeBtn" onclick="closeMenu()">X</button>
+                <h3>Arrangement</h3>
+                <hr>
+                <div class="notAvailable">
+                    <p>This feature is not available for Articles.</p>
+                    <p>Go <a href="../index.html">back to home.</a></p> 
+                </div>
+            </div> <!-- arrangementMenu -->
+        
+            <div id="orderMenu" class="popupMenu">
+                <button class="closeBtn" onclick="closeMenu()">X</button>
+                <h3>Order</h3>
+                <hr>
+                <div class="notAvailable">
+                    <p>This feature is not available for Articles.</p>
+                    <p>Go <a href="../index.html">back to home.</a></p>
+                </div>
+            </div> <!-- orderMenu -->
+                        
+            <!-- Themes Menu -->
+            <div id="themesMenu" class="popupMenu">
+                <button class="closeBtn" onclick="closeMenu()">X</button>
+                <h3>Theme:</h3>
+                <hr>
+                <div class="radio-group">
+                    <label><input type="radio" name="theme" value="css-files/astyle - dark modern.css" onclick="setTheme('css-files/dark modern.css')">Dark Modern</label>
+                    <hr>
+                    <label><input type="radio" name="theme" value="css-files/astyle - pink pastel.css" onclick="setTheme('css-files/pink pastel.css')">Pink Pastel</label>
+                    <hr>
+                    <label><input type="radio" name="theme" value="css-files/astyle - windows xp.css" onclick="setTheme('css-files/windows xp.css')">Windows XP</label>
+                </div>
+                <button onclick="saveTheme()" class="closeBtn">OK</button>
+            </div> <!-- themesMenu -->
+        
+        </div> <!--page-->
+    
+        <footer>
+            <a href="../index.html" class="back-button">Back to Home</a>
+        </footer>
+    
+        <script src="../js-files/ascript.js"></script>
+    </body>
+</html>
+    

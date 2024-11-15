@@ -1,0 +1,446 @@
+/********* Common in html, body, div, p *********/
+html, body, div, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/********* Universal Elements *********/
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.0;
+    min-height: var(--viewport-height);
+    min-width: 320px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    cursor: url("cursors/darkcursor1.png"), auto;
+}
+
+p {
+    text-align: justify;
+    font-family: "Montserrat";
+    font-size: 13px;
+    line-height: 1.4rem;
+    color: #fbfdff;
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    background: -webkit-linear-gradient(0deg, #1fc9c8 0%, #3d8fe4 25%, #7a6ae6 50%, #d04479 75%, #fdae8b 100%);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.3rem;
+}
+
+a {
+    background: #21C6C8;
+    background: linear-gradient(90deg, #21C6C8 0%, #3E8FE5 50%, #905FC8 50%, #F61BA9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a, button:hover {
+    cursor: url("cursors/darkcursor2.png"), auto;
+}
+
+/********* Page (responsive) *********/
+#page {
+    --alignment: var(--site-language-alignment);
+    --flex-alignment: var(--site-language-flex-alignment);
+    --indent-left: var(--site-language-indent-left);
+    --indent-right: var(--site-language-indent-right);
+    --margin-left: var(--site-language-margin-left);
+    --margin-right: var(--site-language-margin-right);
+    --border-radius-tl: 0;
+    --border-radius-tr: 0;
+    --border-radius-br: 0;
+    --border-radius-bl: 0;
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    text-align: var(--alignment);
+    z-index: 1;
+    background-image: url("https://i.pinimg.com/564x/c4/48/bb/c448bbc7ce0197a528a671b1cd9e3a7f.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+/********* Inner Page (responsive) *********/
+#page > #inner {
+    --padding-horizontal: 2rem;
+    --padding-vertical: 1.5rem;
+    --spacing: 0.75rem;
+    --width: 70rem;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    max-width: 100%;
+    position: relative;
+    width: var(--width);
+    z-index: 1;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+    background-color: #121416;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/********* Header *********/
+.header {
+    align-items: center;
+}
+
+#headerBG img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    width: 100%;
+    align-items: center;
+}
+
+/********* Upper Section *********/
+.upperContainer {
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+    
+    background-image: url("https://i.pinimg.com/564x/c4/48/bb/c448bbc7ce0197a528a671b1cd9e3a7f.jpg");
+    background-size: contain;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/********* Lower Section *********/
+.lowerContainer {
+    width: 99.5%;
+    display: table;
+    align-self: center;
+    background: #121416;
+    overflow:hidden;
+    margin-bottom: 3rem;
+}
+
+.lower {
+    display: table-cell;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/********* Left, Upper *********/
+.left {
+    float: left;
+    width: 15%;
+    margin-right: 10px;
+    display: block;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    box-sizing: border-box;
+    background-color: #121416;
+    border-radius: 20px;
+    padding: 10px; 
+}
+
+/********* Center, Upper *********/
+.center {
+    float: left;
+    width: 65%;
+}
+
+.centerContainer {
+    display: table;
+    background-color: #121416;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+/********* Right, Upper *********/
+.right {
+    float: right;
+    display: block;
+
+    width: 15%;
+    height: inherit;
+    margin-left: 10px;
+    
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow: visible;
+
+    box-sizing: border-box;
+    background-color: #121416;
+    
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********* For clearing float *********/
+#clear {
+    clear: both;
+}
+
+/********* About Us Section *********/
+.aboutUsBG {
+    border-radius: 30px;
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: auto;
+    background: -webkit-linear-gradient(0deg, #1fc9c8 0%, #3d8fe4 25%, #7a6ae6 50%, #d04479 75%, #fdae8b 100%);
+}
+
+.aboutUsText {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    letter-spacing: 0;
+    text-align: center;
+}
+
+/********* Main Article Section *********/
+.article1Title {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 5px;
+    
+    background: #121416;
+
+    color:linear-gradient(0deg, #1fc9c8 0%, #3d8fe4 25%, #7a6ae6 50%, #d04479 75%, #fdae8b 100%);
+    text-shadow: 1px 1px #fbfdff;
+    border-radius: 15px;
+}
+
+#article1 {
+    padding: 15px;
+}
+
+#article1Cont {
+    background-color: #121416;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#article1Author {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+/********* Center Articles Section *********/
+.centerArticles {
+    display: table-cell;
+    padding: 15px;
+}
+
+#article2, #article3 {
+    display: table-row;
+    padding: 15px;
+}
+
+#article2Author, #article3Author {
+    text-align: left;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+/********* Lower Articles Section *********/
+#article4, #article5, #article6 {
+    display: table-row;
+    padding: 20px;
+}
+
+#article4Author, #article5Author, #article6Author {
+    text-align: left;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/********* Images *********/
+.mainArticleBG {
+    align-content: center;
+    border-radius: 20px;
+    padding: 2%;
+    background-color: #121416;
+    background-repeat: repeat;
+}
+
+.articleimg {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    width: 100%;
+    align-items: center;
+    
+    border: 2px solid #fbfdff;  
+    border-radius: 15px;
+}
+
+.articleimg img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    width: inherit;
+    border-radius: 15px;
+}
+
+/********* Calendar, Right Section *********/
+.calendar {
+    padding: 0px;
+    border: 0;
+    width: 160px;
+    height: 310px;
+    overflow: hidden;
+}
+
+/********* Control Panel *********/
+.controlPanel {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1rem;
+    width: 69.8rem;
+    align-items: center; 
+    position: fixed;
+    bottom: 0;
+    
+    background-color: #121416;
+    transform: translateY(-20%);
+    border-radius: 20px;
+}
+
+.controlPanel button {
+    width: 30%;
+    margin: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: #0831d9;
+    border-radius: 20px;
+
+    display: inline-block;
+    cursor: url("cursors/darkcursor2.png"), auto;
+
+    color: #fbfbfc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    background: linear-gradient(90deg, #1fc9c8 0%, #3d8fe4 25%, #7a6ae6 50%, #d04479 75%, #fdae8b 100%);
+    -ms-transform: translateY(-20%);
+
+    text-shadow: 1px 1px #121416;
+    text-align: center;
+
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.controlPanel button:active {
+    transform: scale(0.95);
+    background-color: #1fc9c8;
+}
+
+/******** Pop Up Menu Elements *********/
+.popupMenu {
+    display: none;
+    position: fixed;
+    width: 20rem;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #121416;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 11;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popupMenu .closeBtn {
+    float: right;
+
+    background-color: fbfdff;
+    color: #121416;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    cursor: url("cursors/darkcursor2.png"), auto;
+}
+
+.popupMenu .closeBtn:active {
+    transform: scale(0.95);
+    background-color: #121416;
+}
+
+.popupMenu select, option {
+    font-family: "Montserrat";
+    font-size: large;
+    text-align: center;
+    cursor: url("cursors/darkcursor2.png"), auto;
+}
+
+.popupMenu option {
+    color: #fbfdff;
+    background-color: #121416;
+    cursor: url("cursors/darkcursor2.png"), auto;
+}
+
+.popupMenu label {
+    font-family: "Montserrat";
+    font-size: large;
+    text-align: center;
+    font-weight: 500;
+    color: #fbfdff;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+/********* Miscellaneous / Theme Exclusive *********/
+::selection {
+    color: #121416;
+    background-color: #fbfdff;
+}

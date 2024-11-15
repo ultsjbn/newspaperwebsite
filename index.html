@@ -1,0 +1,324 @@
+<!-- CMSC 110 - DP
+ Machine Problem 1
+ Novesteras, Jessica Bea A.
+
+ References:
+ New Perspectives on HTML5, CSS3, and JavaScript by Patrick M. Carey, 6th Edition  
+ https://stackoverflow.com/questions/37632409/style-selector-keep-style-between-pages
+ https://www.w3schools.com/js/js_string_templates.asp
+ https://www.w3schools.com/js/js_loop_for.asp
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript
+ https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+ https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+ https://www.w3schools.com/jsref/jsref_push.asp
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Echosphere</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="theme" href="css-files/dark modern.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preload" type="text/css" href="css-files/dark modern.css" as="style">
+        <link rel="preload" type="text/css" href="css-files/pink pastel.css" as="style">
+        <link rel="preload" type="text/css" href="css-files/windows xp.css" as="style">
+    </head>
+
+    <body>
+        <div id="page">
+            <div id="inner">
+            <!--  Header / Title  -->
+                <div class="header">
+                    <div id="headerBG">
+                        <img id="headerimg" src="images/dark modern header.png">
+                    </div>
+                </div> <!--header-->
+
+            <!--Upper Section-->
+                <div class="upperContainer">
+                    <!--Left-->
+                    <div class="left">
+                        <!--Our Site-->
+                        <div class="ourSite">                    
+                            <div class="aboutUsBG">
+                                <div class="aboutUsText">
+                                    ABOUT US
+                                </div>
+                            </div>
+                            <p>The EchoSphere is your daily source for fresh perspectives on news, tech, and culture. Our editorial team is committed to clear, engaging stories that resonate and inform. Join us as we echo voices that matter.
+                            </p>                            
+                        </div> <!--ourSite-->
+                        
+                        <!--Ads-->
+                        <div>
+                            <div class="ads">                    
+                                <img src="https://web.archive.org/web/20090829180211/http://geocities.com/khurram_09/ads/visualNET.gif">
+                            </div>
+                            <div class="ads">                    
+                                <img src="https://web.archive.org/web/20091027081153/http://geocities.com/raliz12/ads/ad_01.gif" style="width:120px">
+                            </div>
+                        </div> <!--Ad-->                        
+                    </div> <!--left-->
+
+                    <!--Center-->
+                    <div class="center">
+                        <!--Main Article Image-->
+                        <div class="mainArticleBG"> 
+                            <div id="article1img" class="articleimg">
+                                <img id="article1img" src="https://focusweb.org/wp-content/uploads/2023/11/unnamed-23-1280x640.jpg">
+                            </div>                   
+                        </div> <!--mainArticleBG-->
+
+                    <!--Article 1-->
+                        <div class="articles" id="article1">                    
+                            <a href="subpages/Article1.html">
+                                <h3 id="article1Title" class="article1Title">PH Red Cross says ready to send aid to Gaza, humanitarian corridor needed</h3>
+                            </a>
+                            <div id="article1Cont">
+                                <p id="article1Author">by ABS-CBN. November 10, 2024</p>
+                                <p id="article1Content">The Philippine Red Cross has expressed readiness to send humanitarian aid to Gaza and is advocating for the establishment of a humanitarian corridor. This initiative aims to facilitate the delivery of essential supplies amidst the ongoing conflict.
+                                    <a href="subpages/Article1.html">Read more...</a>
+                                </p>
+                            </div>
+                        </div> <!--article1-->
+                        
+                    <!--Article 2 and 3 Table-->
+                        <div class="centerContainer">
+                            <div class="centerArticles" >   
+                            <!--Article 2-->
+                                <div id="article2" class="articles">
+                                    <div id="article2img" class="articleimg">
+                                        <img id="article2img" src="https://media.philstar.com/photos/2023/12/27/gaza-bombardment_2023-12-27_08-38-35.jpg">
+                                    </div>
+                                    <a href="subpages/Article2.html">
+                                        <h3 id="article2Title">Philippines calls for prompt implementation of ceasefire plan in Gaza</h3>
+                                    </a>
+                                    <p id="article2Author">by Philstar. June 21, 2024</p>                    
+                                    <p id="article2Content">The Philippines, through the Department of Foreign Affairs, has reiterated its call for an immediate ceasefire in the Gaza Strip, urging the United Nations Security Council to promptly implement its proposed ceasefire deal to end the war. UNSC Resolution 2735, which was adopted on June 10 with 14 votes in favor, urges Hamas to accept a three-phase ceasefire deal that sets the conditions for the release of all hostages held by Hamas, establish a permanent ceasefire in the Gaza Strip and advance a multi-year reconstruction plan.
+                                        <a href="subpages/Article2.html">Read more...</a>    
+                                    </p>
+                                    <hr>
+                                </div> <!--article2-->
+
+                                <!--Article 3-->
+                                <div id="article3" class="articles">       
+                                    <div id="article3img" class="articleimg">
+                                        <img id="article3img" src="https://gdfi.com.ph/wp-content/uploads/2022/11/blog-image-gdfi-ub-copy.jpg">
+                                    </div>             
+                                    <a href="subpages/Article3.html">
+                                        <h3 id="article3Title">Global Dominion dominates with 1B pesos of loans released in a month</h3>
+                                    </a>
+                                    <p id="article3Author">by INQUIRER.net. November 2, 2024</p>
+                                    <p id="article3Content">Leading PH financing company, Global Dominion achieved yet another remarkable milestone in its recent loan releases that reached 1 billion pesos in just one month (October 2024). This beats its former record of 980 million pesos.“We’ve only just begun,” said its president & managing director Patricia Poco-Palacios. With more than 116 branches and marketing offices nationwide, Global Dominion aims to be of service to more Filipinos through its accessible and innovative loan products and services.“We’ve only just begun,” said its president & managing director Patricia Poco-Palacios. With more than 116 branches and marketing offices nationwide, Global Dominion aims to be of service to more Filipinos through its accessible and innovative loan products and services.
+                                        <a href="subpages/Article3.html">Read more...</a> 
+                                    </p>
+                                <hr>
+                                </div> <!--article3-->
+
+                            </div> <!--centerArticles-->
+                        </div> <!--centerContainer-->
+                    </div> <!--center-->
+
+                    <!--Right-->
+                    <div class="right">
+                        <!--Calendar-->
+                        <div id="calendar">
+                            <iframe id="calendarFrame" class="calendar" src="http://nosi-mizuhiki.com/blog_tool/moon1.php" scrolling="no"></iframe>
+                        </div>
+
+                        <div class="ads">
+                            <img src="https://web.archive.org/web/20090820095940/http://geocities.com/angelicum_boys_club/images/ads.gif" style="width:130px">
+                        </div>
+                            
+                    </div> <!--right-->
+
+                    <!--For clearing float-->
+                    <div id="clear"></div>
+                </div> <!--upperContainer-->
+
+            <!--Lower Section-->
+                <div class="lowerContainer">
+                    <div class="lower">
+                        <hr>
+                    <!--Article 4-->
+                        <div id="article4" class="articles">
+                            <div id="article4img" class="articleimg">
+                                <img id="article4img" src="https://newsinfo.inquirer.net/wp-content/blogs.dir/10/files/2024/10/Bicol-Maharlika-Highway-in-Camarines-Sur-flood-hit-areas-28October2024.jpg">
+                            </div>
+                            <a href="subpages/Article4.html">
+                                <h3 id="article4Title">How can governments tackle loss and damage at the national level?</h3>
+                            </a>
+                            <p id="article4Author">by John Leo Algo. August 27, 2024</p>
+                            <p id="article4Content">More than a decade after the landfall of super-typhoon Haiyan changed how the world responded to the climate crisis, the country will host the board of the Fund for responding to Loss and Damage (FLD) for the next few years. This gives it a leadership role in determining how the Fund will run and function to provide much-needed support to those most affected by typhoons, sea level rise, and other impacts. This also puts pressure on the national government to not just set the tone for the administration of the Fund, but to prove it can match its global calls for climate justice with policies and solutions at the national level.  
+                                <a href="subpages/Article4.html">Read more...</a> 
+                            </p>
+                        </div> <!--article4-->
+
+                    <!--Article 5-->
+                        <div id="article5" class="articles">
+                            <div id="article5img" class="articleimg">
+                                <img id="article5img" src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2181050005.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp">
+                            </div>
+                            <a href="subpages/Article5.html">
+                                <h3 id="article5Title">Super Typhoon Kong-rey edges towards Taiwan, could sweep ‘almost the whole’ island</h3>
+                            </a>
+                            <p id="article5Author">by Kathleen Magramo and Eric Cheung. October 30, 2024</p>
+                            <p id="article5Content">Authorities in Taiwan are warning residents along its eastern coast to brace for the impacts Super Typhoon Kong-rey, which has rapidly intensified as it barrels towards the island after bashing the Philippines. The powerful typhoon is forecast to make landfall early Thursday (Wednesday evening ET) in Taitung, a sparsely populated county on Taiwan’s mountainous southeastern coast.
+                                <a href="subpages/Article5.html">Read more...</a> 
+                            </p>
+                        </div> <!--article5-->
+
+                    <!--Article 6-->
+                        <div id="article6" class="articles">
+                            <div id="article6img" class="articleimg">
+                                <img id="article6img" src="https://i.guim.co.uk/img/media/81b69ee1b7e1edc78e0573339d13bfad50ead9ff/0_0_4000_2667/master/4000.jpg?width=1300&dpr=2&s=none&crop=none">
+                            </div>
+                            <a href="subpages/Article6.html">
+                                <h3 id="article6Title">Nasa astronaut hospitalized after return from International Space Station</h3>
+                            </a>
+                            <p id="article6Author">by TheGuardian. October 25, 2024</p>
+                            <p id="article6Content">A Nasa astronaut who just returned from the International Space Station has been hospitalized for an unspecified medical condition but remains stable, according to the US space agency.
+                            The four-member Crew-8 mission splashed down off the coast of Florida early on Friday after nearly eight months aboard the orbital laboratory.
+                            On its way back to Earth, the SpaceX Dragon executed a normal re-entry and splashdown, and recovery of the crew and spacecraft was without incident, Nasa said in a blog post.
+                            <a href="subpages/Article6.html">Read more...</a> 
+                            </p>
+                        </div> <!--article6-->
+                        <hr>
+                    </div> <!--lower-->
+                </div> <!--lowerContainer-->
+
+            <!--Control Panel-->
+                <div class="controlPanel">
+                    <button class="arrangement" onclick="openMenu('arrangementMenu')">Arrangement</button>
+                    <button class="order" onclick="openMenu('orderMenu')">Order</button>
+                    <button class="themes" onclick="openMenu('themesMenu')">Themes</button>
+                </div> <!--controlPanel-->
+            
+            <!-- Overlay -->
+                <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+            
+            <!-- Popup Menus -->
+                <!-- Arrangement Menu -->
+                <div id="arrangementMenu" class="popupMenu">
+                    <button class="closeBtn" onclick="closeMenu()">X</button>
+                    <h3>Arrangement</h3>
+                    <hr>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="arrangement" value="sequential" onclick="setArrangement('sequential')">
+                            Sequential
+                        </label>
+
+                        <label>
+                            <input type="radio" name="arrangement" value="column" onclick="setArrangement('column')">
+                            Column
+                        </label>
+                    </div>
+                </div> <!-- arrangementMenu -->
+                
+                <!-- Order Menu -->
+                <div id="orderMenu" class="popupMenu">
+                    <button class="closeBtn" onclick="closeMenu()">X</button>
+                    <h3>Order</h3>
+                    <hr>
+
+                    <!-- Priority 1 -->
+                    <label for="orderSelect1">Priority 1:</label>
+                    <select id="orderSelect1" onchange="setOrder()">
+                        <option value="1">Article 1</option>
+                        <option value="2">Article 2</option>
+                        <option value="3">Article 3</option>
+                        <option value="4">Article 4</option>
+                        <option value="5">Article 5</option>
+                        <option value="6">Article 6</option>
+                    </select>
+                    <hr>
+
+                    <!-- Priority 2 -->
+                    <label for="orderSelect2">Priority 2:</label>
+                    <select id="orderSelect2" onchange="setOrder()">
+                        <option value="1">Article 1</option>
+                        <option value="2">Article 2</option>
+                        <option value="3">Article 3</option>
+                        <option value="4">Article 4</option>
+                        <option value="5">Article 5</option>
+                        <option value="6">Article 6</option>
+                    </select>
+                    <hr>
+
+                    <!-- Priority 3 -->
+                    <label for="orderSelect3">Priority 3:</label>
+                    <select id="orderSelect3" onchange="setOrder()">
+                        <option value="1">Article 1</option>
+                        <option value="2">Article 2</option>
+                        <option value="3">Article 3</option>
+                        <option value="4">Article 4</option>
+                        <option value="5">Article 5</option>
+                        <option value="6">Article 6</option>
+                    </select>
+                    <hr>
+
+                    <!-- Priority 4 -->
+                    <label for="orderSelect4">Priority 4:</label>
+                    <select id="orderSelect4" onchange="setOrder()">
+                        <option value="1">Article 1</option>
+                        <option value="2">Article 2</option>
+                        <option value="3">Article 3</option>
+                        <option value="4">Article 4</option>
+                        <option value="5">Article 5</option>
+                        <option value="6">Article 6</option>
+                    </select>
+                    <hr>
+
+                    <!-- Priority 5 -->
+                    <label for="orderSelect5">Priority 5:</label>
+                    <select id="orderSelect5" onchange="setOrder()">
+                        <option value="1">Article 1</option>
+                        <option value="2">Article 2</option>
+                        <option value="3">Article 3</option>
+                        <option value="4">Article 4</option>
+                        <option value="5">Article 5</option>
+                        <option value="6">Article 6</option>
+                    </select>
+                    <hr>
+
+                    <!-- Priority 6 -->
+                    <label for="orderSelect6">Priority 6:</label>
+                    <select id="orderSelect6" onchange="setOrder()">
+                        <option value="1">Article 1</option>
+                        <option value="2">Article 2</option>
+                        <option value="3">Article 3</option>
+                        <option value="4">Article 4</option>
+                        <option value="5">Article 5</option>
+                        <option value="6">Article 6</option>
+                    </select>
+
+                    <button onclick="reorderArticles()" class="closeBtn">OK</button>
+                </div>
+                <!-- orderMenu -->
+
+                <!-- Themes Menu -->
+                <div id="themesMenu" class="popupMenu">
+                    <button class="closeBtn" onclick="closeMenu()">X</button>
+                    <h3>Theme:</h3>
+                    <hr>
+                    <div class="radio-group">
+                        <label><input type="radio" name="theme" value="css-files/dark modern.css" onclick="setTheme('css-files/dark modern.css')">Dark Modern</label>
+                        <hr>
+                        <label><input type="radio" name="theme" value="css-files/pink pastel.css" onclick="setTheme('css-files/pink pastel.css')">Pink Pastel</label>
+                        <hr>
+                        <label><input type="radio" name="theme" value="css-files/windows xp.css" onclick="setTheme('css-files/windows xp.css')">Windows XP</label>
+                    </div>
+                </div> <!-- themesMenu -->
+
+            </div> <!--inner-->
+        </div> <!--page-->
+        
+        <!--JavaScript-->
+        <script type="text/javascript" src="js-files/index.js"></script>        
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="articleTheme" href="css-files/dark modern.css" rel="stylesheet" type="text/css">
+        <title>The EchoSphere - Philippines calls for prompt implementation of ceasefire plan in Gaza</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head> 
+    
+    <body>
+        <div id="page">
+            <!--Header-->
+            <header>
+                <a href="../index.html">
+                    <img id="headerimg" src="images/dark modern header.png">
+                </a>
+                <div id="date" class="date">November 10, 2024</div>
+            </header> <!--header-->
+
+            <!--Main Content-->
+            <main>
+                <article>
+                    <h1>Philippines calls for prompt implementation of ceasefire plan in Gaza</h1>
+                    <h3>by Philstar. June 21, 2024</h3>
+                    <div id="top-image">
+                        <img id="articleImg" src="https://media.philstar.com/photos/2023/12/27/gaza-bombardment_2023-12-27_08-38-35.jpg">
+                    </div>
+                    <p>MANILA, Philippines — The Philippines, through the Department of Foreign Affairs, has reiterated its call for an immediate ceasefire in the Gaza Strip, urging the United Nations Security Council to promptly implement its proposed ceasefire deal to end the war.</p>
+                    <p>UNSC Resolution 2735, which was adopted on June 10 with 14 votes in favor, urges Hamas to accept a three-phase ceasefire deal that sets the conditions for the release of all hostages held by Hamas, establish a permanent ceasefire in the Gaza Strip and advance a multi-year reconstruction plan. Israel has accepted this United States-endorsed resolution but has also vowed to press on with their military operations. </p>
+                    <p>"The Philippines reiterates its call for an immediate ceasefire, the safe release of hostages, and the unhindered delivery of humanitarian aid to the people of Gaza. The prompt implementation of the measures is imperative to alleviate the suffering of innocent civilians caught in the crossfire," the DFA said.</p>
+                    <p>“The Philippines remains committed to supporting efforts aimed at achieving a peaceful resolution to the conflict in Gaza. The country stands ready to contribute to initiatives that foster stability, security, and peace in the region,” the department added.</p>
+                    <p>A day after the UNSC resolution was adopted, a senior Hamas official said it welcomed the proposal and is ready to negotiate over the details.</p>
+                    <p>Whether Israel and Hamas agree to the ceasefire plan remains in question, but the resolution’s strong support in the UN’s most powerful body puts added pressure on both parties to approve the proposal.</p>
+                    <p>Israeli Prime Minister Benjamin Netanyahu has said that US President Joe Biden presented only parts of the proposal and insisted that any talk of a permanent cease-fire before dismantling Hamas’ military and governing capabilities is a non-starter.</p>
+                    <p>The proposed ceasefire plan will start with a six-month truce, including the release of Israeli hostages in exchange for Palestinian prisoners, the withdrawal of Israeli forces from Gaza’s populated areas, and the return of Palestinian civilians to their homes.</p>
+                    <p>This first phase also aims to ensure that 600 trucks with aid enter Gaza daily.</p>
+                    <p>In the second phase, if Israel and Hamas agree, there will be a permanent end to fighting, the release of all remaining hostages, and a complete withdrawal of Israeli forces from Gaza.</p>
+                    <p>Phase three would launch “a major multi-year reconstruction plan for Gaza and the return of the remains of any deceased hostages still in Gaza to their families.” — Cristina Chi with reports from Agence-France Presse.</p>
+                </article>
+
+                <a href="https://www.philstar.com/headlines/2024/06/21/2364509/philippines-calls-prompt-implementation-ceasefire-plan-gaza" target="_blank">Source.</a>
+            </main> <!--main content-->
+
+            <!--Control Panel-->
+            <div class="controlPanel">
+                <button class="arrangement" onclick="openMenu('arrangementMenu')">Arrangement</button>
+                <button class="order" onclick="openMenu('orderMenu')">Order</button>
+                <button class="themes" onclick="openMenu('themesMenu')">Themes</button>
+            </div> <!--controlPanel-->
+
+            <!-- Overlay -->
+            <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+                    <!-- Arrangement Menu -->
+                    <div id="arrangementMenu" class="popupMenu">
+                        <button class="closeBtn" onclick="closeMenu()">X</button>
+                        <h3>Arrangement</h3>
+                        <hr>
+                        <div class="notAvailable">
+                            <p>This feature is not available for this page.</p>
+                            <p>Go <a href="../index.html">back to home.</a></p> 
+                        </div>
+                    </div> <!-- arrangementMenu -->
+
+                    <div id="orderMenu" class="popupMenu">
+                        <button class="closeBtn" onclick="closeMenu()">X</button>
+                        <h3>Order</h3>
+                        <hr>
+                        <div class="notAvailable">
+                            <p>This feature is not available for this page.</p>
+                            <p>Go <a href="../index.html">back to home.</a></p>
+                        </div>
+                    </div>
+                    <!-- orderMenu -->
+                    
+                    <!-- Themes Menu -->
+                    <div id="themesMenu" class="popupMenu">
+                        <button class="closeBtn" onclick="closeMenu()">X</button>
+                        <h3>Theme:</h3>
+                        <hr>
+                        <div class="radio-group">
+                            <label><input type="radio" name="theme" value="css-files/dark modern.css" onclick="setTheme('css-files/dark modern.css')">Dark Modern</label>
+                            <hr>
+                            <label><input type="radio" name="theme" value="css-files/pink pastel.css" onclick="setTheme('css-files/pink pastel.css')">Pink Pastel</label>
+                            <hr>
+                            <label><input type="radio" name="theme" value="css-files/windows xp.css" onclick="setTheme('css-files/windows xp.css')">Windows XP</label>
+                        </div>
+                    </div> <!-- themesMenu -->
+
+        </div> <!--page-->
+
+        <footer>
+            <a href="../index.html" class="back-button">Back to Home</a>
+        </footer>
+
+        <script src="../js-files/ascript.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,488 @@
+/********* Custom Fonts *********/
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url('fonts/Pixelated Ms Sans Serif.woff') format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/********* Common in html, body, div, p *********/
+html, body, div, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/********* Universal Elements *********/
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.0;
+    min-height: var(--viewport-height);
+    min-width: 320px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    cursor: url("cursors/pixelcursor1.png"), auto;
+}
+
+p {
+    text-align: justify;
+    font-family: monospace;
+    font-size: 12;
+    line-height: 1.3rem;
+    color: #1e1e1e;
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #003dd7;
+    margin-bottom: 0;
+}
+
+a {
+    color: #003dd7;
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a, button:hover {
+    cursor: url("cursors/pixelcursor2.png"), auto;
+}
+
+/********* Page (responsive) *********/
+#page {
+    --alignment: var(--site-language-alignment);
+    --flex-alignment: var(--site-language-flex-alignment);
+    --indent-left: var(--site-language-indent-left);
+    --indent-right: var(--site-language-indent-right);
+    --margin-left: var(--site-language-margin-left);
+    --margin-right: var(--site-language-margin-right);
+    --border-radius-tl: 0;
+    --border-radius-tr: 0;
+    --border-radius-br: 0;
+    --border-radius-bl: 0;
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    max-width: 100%;
+    position: relative;
+    text-align: var(--alignment);
+    z-index: 1;
+    background-image:url('https://www.wallpaperhub.app/_next/image?url=https%3A%2F%2Fcdn.wallpaperhub.app%2Fcloudcache%2Fb%2Fd%2F7%2F6%2F4%2Fb%2Fbd764bb25d49a05105060185774ba14cd2c846f7.jpg&w=1920&h=1280&q=100');
+    background-size: cover;
+}
+
+/********* Inner Page (responsive) *********/
+#page > #inner {
+    --padding-horizontal: 2rem;
+    --padding-vertical: 1.5rem;
+    --spacing: 0.75rem;
+    --width: 70rem;
+    border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+    max-width: 100%;
+    position: relative;
+    width: var(--width);
+    z-index: 1;
+    padding: var(--padding-vertical) var(--padding-horizontal);
+    background-color: #f8f8f0;
+    align-items: center;
+    box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
+    border: 5px ridge lightgray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+}
+
+/********* Header *********/
+.header {
+    align-items: center;
+}
+
+#headerBG img {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    width: 100%;
+    align-items: center;
+}
+
+/********* Upper Section *********/
+.upperContainer {
+    display: flex;
+    padding: 10px;
+    margin:auto;
+    
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+
+    background-color: #ece9d8;
+    border: 3px ridge #919b9c;
+
+    box-shadow: -1px -1.4px 1px inset #9e9699, 7px 5px 3px inset white,
+      0px 0px 2px #aba4a6;
+    overflow: hidden;
+}
+
+/********* Lower Section *********/
+.lowerContainer {
+    width: 99.5%;
+    display: table;
+    align-self: center;
+    border: 3px ridge #919b9c; 
+    background: #ece9d8;
+    overflow:hidden;
+    margin-bottom: 3rem;
+    box-shadow: -1px -1.4px 1px inset #9e9699, 7px 5px 3px inset white,
+      0px 0px 2px #aba4a6;
+}
+
+.lower {
+    display: table-cell;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/********* Left, Upper *********/
+.left {
+    float: left;
+    width: 15%;
+    margin-right: 10px;
+    display: block;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+    border: 3px #919b9c;
+    border-style: inset;  
+    padding: 10px; 
+}
+
+/********* Center, Upper *********/
+.center {
+    float: left;
+    width: 65%;
+}
+
+.centerContainer {
+    display: table;
+    background-color: #fbfbfc;
+    margin-top: 1rem;
+    border: 3px inset #919b9c;
+}
+
+/********* Right, Upper *********/
+.right {
+    float: right;
+    display: block;
+
+    width: 15%;
+    height: inherit;
+    margin-left: 10px;
+    
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow: visible;
+
+    box-sizing: border-box;
+    background-color: #fbfbfc;
+    border: 3px inset #919b9c;
+}
+
+.ads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********* For clearing float *********/
+#clear {
+    clear: both;
+}
+
+/********* About Us Section *********/
+.aboutUsBG {
+    border-radius: 7px 7px 0px 0px;
+    margin-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: -1px -1.4px 1px inset #9e9699, 2px 3px 1.5px inset white,
+      0px 0px 2px #aba4a6;
+    margin: auto;
+    background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+}
+
+.aboutUsText {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px #0f1089;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+/********* Main Article Section *********/
+.article1Title {
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 5px;
+
+    border-top: 1px dotted #666666;
+    border-left: 1px dotted #666666;
+    border-bottom: 1px dotted #666666;
+    border-right: 1px dotted #666666;
+    
+    background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+    box-shadow: -1px -1.4px 1px inset #9e9699, 2px 3px 1.5px inset white,
+      0px 0px 2px #aba4a6;
+
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+
+    color:white;
+    text-shadow: 1px 1px #0f1089;
+}
+
+#article1 {
+    padding: 15px;
+}
+
+#article1Cont {
+    background-color: #fbfbfc;
+    border: 3px inset #919b9c;
+    padding: 15px;
+}
+
+#article1Author {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    color: #003dd7;
+}
+
+/********* Center Articles Section *********/
+.centerArticles {
+    display: table-cell;
+    padding: 15px;
+}
+
+#article2, #article3 {
+    display: table-row;
+    padding: 15px;
+}
+
+#article2Author, #article3Author {
+    text-align: left;
+    font-style: italic;
+    font-weight: 700;
+    color: #003dd7;
+}
+
+/********* Lower Articles Section *********/
+#article4, #article5, #article6 {
+    display: table-row;
+    padding: 20px;
+}
+
+#article4Author, #article5Author, #article6Author {
+    text-align: left;
+    font-style: italic;
+    font-weight: 700;
+    color: #003dd7;
+}
+
+/********* Images *********/
+.mainArticleBG {
+    align-content: center;
+    border: 5px ridge #0831d9;
+    padding: 2%;
+    background-color: #ece9d8;
+    background-repeat: repeat;
+    box-shadow: -1px -1.4px 1px inset #9e9699, 7px 5px 3px inset white,
+      0px 0px 2px #aba4a6;
+}
+
+.mainArticlePic {
+    height: 18rem;
+    border: 2px ridge #0831d9;
+    border-radius: 15px;
+}
+.articleimg {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    width: 100%;
+    align-items: center;
+}
+
+.articleimg img {
+    max-width: 100%;
+    vertical-align: top;
+    width: inherit;
+    border: #0831d9 inset 2px;
+}
+
+/********* Calendar, Right Section *********/
+.calendar {
+    background-color: #0831d9;
+    padding: 0px;
+    border: 0;
+    width: 175px;
+    height: 212px;
+    overflow: hidden;
+}
+
+/********* Control Panel *********/
+.controlPanel {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1rem;
+    width: 69.8rem;
+    align-items: center; 
+    position: fixed;
+    bottom: 0;
+    
+    background-color: #ece9d8;
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    border: 2px ridge #919b9c;
+
+    box-shadow: -1px -1.4px 1px inset #9e9699, 7px 5px 3px inset white,
+      0px 0px 2px #aba4a6;
+}
+
+.controlPanel button {
+    width: 30%;
+    margin: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: #0831d9;
+
+    display: inline-block;
+    cursor: url("cursors/pixelcursor2.png"), auto;
+
+    color: #fbfbfc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+    background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+    -ms-transform: translateY(-20%);
+    box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0 rgba(208, 206, 191, .75);
+
+    text-shadow: 1px 1px #0f1089;
+    text-align: center;
+
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.controlPanel button:active {
+    transform: scale(0.95);
+    background-color: #0831d9;
+}
+
+/********* Pop Up Menu Elements *********/
+.popupMenu {
+    display: none;
+    position: fixed;
+    width: 20rem;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #f8f8f0;
+    border: 4px ridge #919b9c;
+    padding: 20px;
+    z-index: 11;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popupMenu .closeBtn {
+    float: right;
+
+    background-color: #0831d9;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    box-shadow: -1px -1.4px 1px inset #9e9699, 2px 2px 3px inset white,
+    0px 0px 2px #aba4a6;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+
+    cursor: url("cursors/pixelcursor2.png"), auto;
+}
+
+.popupMenu .closeBtn:active {
+    transform: scale(0.95);
+    background-color: #0831d9;
+}
+
+.popupMenu select, option {
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    cursor: url("cursors/pixelcursor2.png"), auto;
+}
+
+.popupMenu option {
+    background-color: #8bcfff;
+    cursor: url("cursors/pixelcursor2.png"), auto;
+}
+
+#orderSelect:hover {
+    background-color: #8bcfff;
+    cursor: url("cursors/pixelcursor2.png"), auto;
+}
+
+.popupMenu label {
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    font-weight: 500;
+    color: #0831d9;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+
+/********* Miscellaneous / Theme Exclusive *********/
+::selection {
+    color: #fbfbfc;
+    background-color: #0831d9;
+}

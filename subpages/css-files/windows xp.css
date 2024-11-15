@@ -1,0 +1,291 @@
+/*********
+
+FOR SUBPAGE !!!
+
+*********/
+
+/********* Custom Fonts *********/
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url('fonts') format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/********* Body *********/
+body {
+    background-image:url('https://www.wallpaperhub.app/_next/image?url=https%3A%2F%2Fcdn.wallpaperhub.app%2Fcloudcache%2Fb%2Fd%2F7%2F6%2F4%2Fb%2Fbd764bb25d49a05105060185774ba14cd2c846f7.jpg&w=1920&h=1280&q=100');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    cursor: url("../css-files/cursors/pixelcursor1.png"), auto;
+}
+
+a, button:hover {
+    cursor: url("../css-files/cursors/pixelcursor2.png"), auto;
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #003dd7; 
+}
+
+p {
+    font-family: monospace;
+    color: #1e1e1e;
+}
+
+/********* For the whole page *********/
+#page {
+    background-color: #f8f8f0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 800px;
+    padding: 20px;
+
+    box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
+    border: 5px ridge lightgray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/********* Header styling *********/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    background-color: #0831d9;
+
+    transition: 0.3s ease, opacity 0.3s ease;
+}
+
+/********* Newspaper Title *********/
+#headerimg {
+    width: 20%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+h1 {
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    line-height: 1;
+
+    background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+    box-shadow: -1px -1.4px 1px inset #9e9699, 2px 3px 1.5px inset white,
+      0px 0px 2px #aba4a6;
+
+    border-top: 1px solid #0831d9;
+    border-left: 1px solid #0831d9;
+    border-right: 1px solid #001ea0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 7px;
+    padding: 10px;
+
+    color:white;
+    text-shadow: 1px 1px #0f1089;
+
+    margin-top: 70px;
+}
+
+h3 {
+    color: #0831d9;
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+/********* Date *********/
+#date {
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    text-align: right;
+
+    color: #ebebeb;
+    transition: opacity 0.3s ease;
+}
+
+/********* Article image *********/
+#top-image {
+    margin-top: 30px;
+}
+
+#top-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    border: 2px solid #fbfdff;
+    border-radius: 10px;
+}
+
+/********* Article Contents *********/
+main {
+    padding: 20px;
+}
+
+article {
+    line-height: 1.6;
+    color: #fbfdff;
+}
+
+/********* Footer *********/
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/********* Back to home button *********/
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    color: white;
+    background-color: #0831d9;
+    box-shadow: -1px -1.4px 1px inset #9e9699, 2px 2px 3px inset white,
+    0px 0px 2px #aba4a6;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    cursor: url("../css-files/cursors/pixelcursor2.png"), auto;
+}
+
+/********* Button animation *********/
+.back-button:active {
+    transform: scale(0.95);
+
+    background-color: #0831d9;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    box-shadow: -1px -1.4px 1px inset #9e9699, 2px 2px 3px inset white,
+    0px 0px 2px #aba4a6;
+
+    cursor: url("../css-files/cursors/pixelcursor2.png"), auto;
+}
+
+/********* Control Panel *********/
+.controlPanel {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 1rem;
+    width: 49rem;
+    align-items: center; 
+    position: fixed;
+    bottom: 0;
+    
+    background-color: #ece9d8;
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    border: 2px ridge #919b9c;
+
+    box-shadow: -1px -1.4px 1px inset #9e9699, 7px 5px 3px inset white,
+      0px 0px 2px #aba4a6;
+}
+
+.controlPanel button {
+    width: 30%;
+    margin: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: #0831d9;
+
+    display: inline-block;
+    cursor: url("../css-files/cursors/pixelcursor2.png"), auto;
+
+    color: #fbfbfc;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+    background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
+    -ms-transform: translateY(-20%);
+    box-shadow: inset 1px 1px #fcfcfe, inset -1px -1px #fcfcfe, 1px 2px 2px 0 rgba(208, 206, 191, .75);
+
+    text-shadow: 1px 1px #0f1089;
+    text-align: center;
+
+}
+
+/********* Pop Up Menu Elements *********/
+.popupMenu {
+    display: none;
+    position: fixed;
+    width: 20rem;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #f8f8f0;
+    border: 4px ridge #919b9c;
+    padding: 20px;
+    z-index: 11;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popupMenu .closeBtn {
+    float: right;
+
+    background-color: #0831d9;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    box-shadow: -1px -1.4px 1px inset #9e9699, 2px 2px 3px inset white,
+    0px 0px 2px #aba4a6;
+
+    cursor: url("../css-files/cursors/pixelcursor2.png"), auto;
+}
+
+.popupMenu label {
+    font-family: "Pixelated MS Sans Serif", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    font-weight: 500;
+    color: #0831d9;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+
+/********* Miscellaneous / Theme Exclusive *********/
+::selection {
+    color: #fbfbfc;
+    background-color: #0831d9;
+}

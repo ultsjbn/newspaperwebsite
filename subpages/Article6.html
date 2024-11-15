@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="articleTheme" href="css-files/dark modern.css" rel="stylesheet" type="text/css">
+        <title>The EchoSphere - Nasa astronaut hospitalized after return from International Space Station</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="page">
+            <!--Header-->
+            <header>
+                <a href="../index.html">
+                    <img id="headerimg" src="images/dark modern header.png">
+                </a>
+                <div id="date" class="date">November 10, 2024</div>
+            </header> <!--header-->
+
+            <!--Main Content-->
+            <main>
+                <article>
+                    <h1>Nasa astronaut hospitalized after return from International Space Station</h1>
+                    <h3>by TheGuardian. October 25, 2024</h3>
+                    <div id="top-image">
+                        <img id="articleImg" src="https://i.guim.co.uk/img/media/81b69ee1b7e1edc78e0573339d13bfad50ead9ff/0_0_4000_2667/master/4000.jpg?width=620&dpr=2&s=none&crop=none">
+                    </div>
+                    <p>A Nasa astronaut who just returned from the International Space Station has been hospitalized for an unspecified medical condition but remains stable, according to the US space agency.</p> 
+
+                    <p>The four-member Crew-8 mission splashed down off the coast of Florida early on Friday after nearly eight months aboard the orbital laboratory.</p>   
+
+                    <p>On its way back to Earth, the SpaceX Dragon executed a normal re-entry and splashdown, and recovery of the crew and spacecraft was without incident, Nasa said in a blog post.</p>
+                        
+                    <p>But during routine medical assessments on the recovery ship, an “additional evaluation of the crew members was requested out of an abundance of caution”, it added, without elaborating.</p> 
+                        
+                    <p>The Nasa astronauts Matthew Dominick, Michael Barratt and Jeanette Epps, and the Roscosmos cosmonaut Alexander Grebenkin were all flown to Ascension Sacred Heart Pensacola.</p>  
+                        
+                    <p>Three were subsequently released, while one of the Nasa astronauts remains at the hospital “under observation as a precautionary measure”.</p>
+                        
+                    <p>Nasa said it would not disclose specific medical information to protect the crew member’s privacy but would provide updates as available.</p>
+                </article>
+                
+                <a href="https://www.theguardian.com/science/2024/oct/25/astronaut-hospitalized-nasa-spacex" target="_blank">Source.</a>
+            </main> <!--main content-->
+
+            <!--Control Panel-->
+            <div class="controlPanel">
+                <button class="arrangement" onclick="openMenu('arrangementMenu')">Arrangement</button>
+                <button class="order" onclick="openMenu('orderMenu')">Order</button>
+                <button class="themes" onclick="openMenu('themesMenu')">Themes</button>
+            </div> <!--controlPanel-->
+        
+            <!-- Arrangement Menu -->
+            <div id="arrangementMenu" class="popupMenu">
+                <button class="closeBtn" onclick="closeMenu()">X</button>
+                <h3>Arrangement</h3>
+                <hr>
+                <div class="notAvailable">
+                    <p>This feature is not available for Articles.</p>
+                    <p>Go <a href="../index.html">back to home.</a></p> 
+                </div>
+            </div> <!-- arrangementMenu -->
+        
+            <div id="orderMenu" class="popupMenu">
+                <button class="closeBtn" onclick="closeMenu()">X</button>
+                <h3>Order</h3>
+                <hr>
+                <div class="notAvailable">
+                    <p>This feature is not available for Articles.</p>
+                    <p>Go <a href="../index.html">back to home.</a></p>
+                </div>
+            </div> <!-- orderMenu -->
+                        
+            <!-- Themes Menu -->
+            <div id="themesMenu" class="popupMenu">
+                <button class="closeBtn" onclick="closeMenu()">X</button>
+                <h3>Theme:</h3>
+                <hr>
+                <div class="radio-group">
+                    <label><input type="radio" name="theme" value="css-files/astyle - dark modern.css" onclick="setTheme('css-files/dark modern.css')">Dark Modern</label>
+                    <hr>
+                    <label><input type="radio" name="theme" value="css-files/astyle - pink pastel.css" onclick="setTheme('css-files/pink pastel.css')">Pink Pastel</label>
+                    <hr>
+                    <label><input type="radio" name="theme" value="css-files/astyle - windows xp.css" onclick="setTheme('css-files/windows xp.css')">Windows XP</label>
+                </div>
+                <button onclick="saveTheme()" class="closeBtn">OK</button>
+            </div> <!-- themesMenu -->
+        
+        </div> <!--page-->
+    
+        <footer>
+            <a href="../index.html" class="back-button">Back to Home</a>
+        </footer>
+    
+        <script src="../js-files/ascript.js"></script>
+    </body>
+</html>
